@@ -5,4 +5,6 @@ themes for redmatrix
 tony baldwin
 https://tonybaldwin.info
 
-* nubasic - blog-like theme, a work in progress, not ready for production
+![nubasic](http://tonybaldwin.homelinux.net/images/nubasic20140409.jpg)
+
+* nubasic - blog-like theme based on bookbasic by taz 
