@@ -6,8 +6,6 @@
  */
 
 
-@import url('../../redbasic/css/style.css');
-
 body {
 	background-color: #fff;
 	font-size: $body_font_size;

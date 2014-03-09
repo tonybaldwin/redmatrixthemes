@@ -1,5 +1,8 @@
 <?php
 
+require_once('view/theme/redbasic/php/style.php');
+echo @file_get_contents('view/theme/nubasic/css/style.css');
+
 if(! $a->install) {
 	// Get the UID of the channel owner
 	$uid = get_theme_uid();
