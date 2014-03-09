@@ -5,4 +5,4 @@ themes for redmatrix
 tony baldwin
 https://tonybaldwin.info
 
-* nubasic - work in progress, not ready for production
+* nubasic - blog-like theme, a work in progress, not ready for production
