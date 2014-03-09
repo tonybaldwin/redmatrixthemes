@@ -14,6 +14,12 @@ body {
 	width:1220px!important;
 }
 
+a, a:visited, a:link, .fakelink, .fakelink:visited, .fakelink:link { 
+	font-weight: bold;
+	color: $link_colour; 
+	text-decoration: none; 
+}
+
 aside {
 	display: block;
 	margin-right:auto;
