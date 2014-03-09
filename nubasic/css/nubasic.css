@@ -19,16 +19,8 @@ nav.navbar {
 }
 
 container {
-	width:1200px!important;
+	width:1000px!important;
 	margin:auto;
-}
-
-aside {
-	display: block;
-	width: 200px;
-	float: left;
-	margin-left: 10px;
-	border-right: 1px solid #333;
 }
 
 aside input[type='text'] {
@@ -37,14 +29,15 @@ aside input[type='text'] {
 
 section {
 	float:left;
-	max-width: 750px;
+	max-width: 850px;
 	display: block;
 	padding-bottom: 350px;
 }
 
-right_aside {
-	float: right;
-	width: 200px;
+aside,right_aside {
+	display:block;
+	float: right!important;
+	width: 200px!important;
 	border-left: 1px solid #333;
 }
 

@@ -11,11 +11,11 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"><?php if(x($page,'nav')) echo $page['nav']; ?></nav>
 		<div id="blog-banner"><?php if(x($page,'banner')) echo $page['banner']; ?></div>
 	<div id="container">
-		<aside><?php if(x($page,'aside')) echo $page['aside']; ?></aside>
 		<section><?php if(x($page,'content')) echo $page['content']; ?>
 			<div id="page-footer"></div>
 			<div id="pause"></div>
 		</section>
+		<aside><?php if(x($page,'aside')) echo $page['aside']; ?></aside>
 		<right_aside><?php if(x($page,'right_aside')) echo $page['right_aside']; ?></right_aside>
 		<div class="clear"></div>
 		<footer><?php if(x($page,'footer')) echo $page['footer']; ?></footer>

@@ -4,7 +4,7 @@
 [widget=affinity][/widget]
 $content
 [/region]
-[region=right_aside]
+[region=aside]
 [widget=fullprofile][/widget]
 [widget=archive][var=wall]1[/var][/widget]
 [widget=categories][/widget]

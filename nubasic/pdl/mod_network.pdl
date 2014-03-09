@@ -5,7 +5,7 @@
 $content
 [/region]
 
-[region=right_aside]
+[region=aside]
 [widget=collections][/widget]
 [widget=archive][/widget]
 [widget=suggestions][/widget]
