@@ -1,0 +1,50 @@
+header #banner {
+	position: fixed;
+	top: 0;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#blog-banner {
+	position: relative;
+	margin-top: 75px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+nav.navbar { 
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+container {
+	width:1200px!important;
+	margin:auto;
+}
+
+aside {
+	display: block;
+	width: 200px;
+	float: left;
+	margin-left: 10px;
+	border-right: 1px solid #333;
+}
+
+aside input[type='text'] {
+ width: 174px;
+}
+
+section {
+	float:left;
+	max-width: 750px;
+	display: block;
+	padding-bottom: 350px;
+}
+
+right_aside {
+	float: right;
+	width: 200px;
+	border-left: 1px solid #333;
+}
+
