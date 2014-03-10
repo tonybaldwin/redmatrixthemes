@@ -1,0 +1,11 @@
+[template]nubasic[/template]
+[region=nav]$nav[/region]
+[region=content]
+[widget=affinity][/widget]
+$content
+[/region]
+
+[region=aside]
+[widget=vcard][/widget]
+[/region]
+
