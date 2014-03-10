@@ -1,11 +1,10 @@
 [template]nubasic[/template]
 [region=nav]$nav[/region]
 [region=content]
-[widget=affinity][/widget]
 $content
 [/region]
 
-[region=right_aside]
+[region=aside]
 [widget=profile][/widget]
 [/region]
 
