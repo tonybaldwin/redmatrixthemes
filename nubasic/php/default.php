@@ -16,6 +16,7 @@
 			<div id="pause"></div>
 		</section>
 		<aside><?php if(x($page,'aside')) echo $page['aside']; ?></aside>
+		<div class="clear"></div>
 		<right_aside><?php if(x($page,'right_aside')) echo $page['right_aside']; ?></right_aside>
 		<div class="clear"></div>
 		<footer><?php if(x($page,'footer')) echo $page['footer']; ?></footer>

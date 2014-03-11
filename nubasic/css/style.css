@@ -21,16 +21,14 @@ a, a:visited, a:link, .fakelink, .fakelink:visited, .fakelink:link {
 }
 
 section {
-	background-color: #fff!important;
 	color: #000;
-	max-width:850!important;
+	max-width:840!important;
 	margin:auto;
+	padding:15px;
 }
 
 aside,right_aside {
-	display: block;
 	float:right!important;
-	background-color: #fff;
 	color: #000;
 	padding: 10px;
 	border-left: 1px solid #333;

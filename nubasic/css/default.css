@@ -1,9 +1,10 @@
 header #banner {
 	position: fixed;
 	top: 0;
-	width: 250px;
+	width: 350px;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 #blog-banner {
 	position: relative;
@@ -29,13 +30,13 @@ aside input[type='text'] {
 
 section {
 	float:left;
-	max-width: 850px;
-	display: block;
+	padding: 15px;
+	max-width: 840px;
 	padding-bottom: 350px;
 }
 
 aside,right_aside {
-	display:block;
+	padding: 10px;
 	float: right!important;
 	width: 200px!important;
 	border-left: 1px solid #333;

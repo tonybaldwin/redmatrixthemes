@@ -8,37 +8,37 @@ if(! $a->install) {
 	$uid = get_theme_uid();
 
 	if($uid)
-	    load_pconfig($uid,'nubasic');
+	    load_pconfig($uid,'redbasic');
 
 // Load the owners pconfig
-		$nav_bg = get_pconfig($uid, "nubasic", "nav_bg");
-		$nav_gradient_top = get_pconfig($uid, "nubasic", "nav_gradient_top");
-		$nav_gradient_bottom = get_pconfig($uid, "nubasic", "nav_gradient_bottom");
-		$nav_active_gradient_top = get_pconfig($uid, "nubasic", "nav_active_gradient_top");
-		$nav_active_gradient_bottom = get_pconfig($uid, "nubasic", "nav_active_gradient_bottom");
-		$nav_bd = get_pconfig($uid, "nubasic", "nav_bd");
-		$nav_icon_colour = get_pconfig($uid, "nubasic", "nav_icon_colour");
-		$nav_active_icon_colour = get_pconfig($uid, "nubasic", "nav_active_icon_colour");
-		$narrow_navbar = get_pconfig($uid,'nubasic','narrow_navbar');
-		$banner_colour = get_pconfig($uid,'nubasic','banner_colour');
-	    $link_colour = get_pconfig($uid, "nubasic", "link_colour");	
-		$schema = get_pconfig($uid,'nubasic','schema');
-	    $bgcolour = get_pconfig($uid, "nubasic", "background_colour");	
-	    $background_image = get_pconfig($uid, "nubasic", "background_image");	
-		$toolicon_colour = get_pconfig($uid,'nubasic','toolicon_colour');
-		$toolicon_activecolour = get_pconfig($uid,'nubasic','toolicon_activecolour');
-	    $item_colour = get_pconfig($uid, "nubasic", "item_colour");	
-	    $item_opacity = get_pconfig($uid, "nubasic", "item_opacity");	
-	    $body_font_size = get_pconfig($uid, "nubasic", "body_font_size");	
-	    $font_size = get_pconfig($uid, "nubasic", "font_size");	
-	    $font_colour = get_pconfig($uid, "nubasic", "font_colour");	
-	    $radius = get_pconfig($uid, "nubasic", "radius");	
-	    $shadow = get_pconfig($uid,"nubasic","photo_shadow");
-	    $converse_width=get_pconfig($uid,"nubasic","converse_width");
-		$nav_min_opacity=get_pconfig($uid,'nubasic','nav_min_opacity');
-		$sloppy_photos=get_pconfig($uid,'nubasic','sloppy_photos');
-		$top_photo=get_pconfig($uid,'nubasic','top_photo');
-		$reply_photo=get_pconfig($uid,'nubasic','reply_photo');
+		$nav_bg = get_pconfig($uid, "redbasic", "nav_bg");
+		$nav_gradient_top = get_pconfig($uid, "redbasic", "nav_gradient_top");
+		$nav_gradient_bottom = get_pconfig($uid, "redbasic", "nav_gradient_bottom");
+		$nav_active_gradient_top = get_pconfig($uid, "redbasic", "nav_active_gradient_top");
+		$nav_active_gradient_bottom = get_pconfig($uid, "redbasic", "nav_active_gradient_bottom");
+		$nav_bd = get_pconfig($uid, "redbasic", "nav_bd");
+		$nav_icon_colour = get_pconfig($uid, "redbasic", "nav_icon_colour");
+		$nav_active_icon_colour = get_pconfig($uid, "redbasic", "nav_active_icon_colour");
+		$narrow_navbar = get_pconfig($uid,'redbasic','narrow_navbar');
+		$banner_colour = get_pconfig($uid,'redbasic','banner_colour');
+	    $link_colour = get_pconfig($uid, "redbasic", "link_colour");	
+		$schema = get_pconfig($uid,'redbasic','schema');
+	    $bgcolour = get_pconfig($uid, "redbasic", "background_colour");	
+	    $background_image = get_pconfig($uid, "redbasic", "background_image");	
+		$toolicon_colour = get_pconfig($uid,'redbasic','toolicon_colour');
+		$toolicon_activecolour = get_pconfig($uid,'redbasic','toolicon_activecolour');
+	    $item_colour = get_pconfig($uid, "redbasic", "item_colour");	
+	    $item_opacity = get_pconfig($uid, "redbasic", "item_opacity");	
+	    $body_font_size = get_pconfig($uid, "redbasic", "body_font_size");	
+	    $font_size = get_pconfig($uid, "redbasic", "font_size");	
+	    $font_colour = get_pconfig($uid, "redbasic", "font_colour");	
+	    $radius = get_pconfig($uid, "redbasic", "radius");	
+	    $shadow = get_pconfig($uid,"redbasic","photo_shadow");
+	    $converse_width=get_pconfig($uid,"redbasic","converse_width");
+		$nav_min_opacity=get_pconfig($uid,'redbasic','nav_min_opacity');
+		$sloppy_photos=get_pconfig($uid,'redbasic','sloppy_photos');
+		$top_photo=get_pconfig($uid,'redbasic','top_photo');
+		$reply_photo=get_pconfig($uid,'redbasic','reply_photo');
 
 }
 
@@ -55,16 +55,16 @@ if(! $a->install) {
 
 	if (($schema) && ($schema != '---')) {
 		// Check it exists, because this setting gets distributed to clones
-		if(file_exists('view/theme/nubasic/schema/' . $schema . '.php')) {
-			$schemefile = 'view/theme/nubasic/schema/' . $schema . '.php';
+		if(file_exists('view/theme/redbasic/schema/' . $schema . '.php')) {
+			$schemefile = 'view/theme/redbasic/schema/' . $schema . '.php';
 			require_once ($schemefile);
 		}
 	}
 		// If we haven't got a schema, load the default.  We shouldn't touch this - we
 		// should leave it for admins to define for themselves.
 			if (! $schema) {
-			      if(file_exists('view/theme/nubasic/schema/default.php')) {
-				    $schemefile = 'view/theme/nubasic/schema/' . 'default.php';
+			      if(file_exists('view/theme/redbasic/schema/default.php')) {
+				    $schemefile = 'view/theme/redbasic/schema/' . 'default.php';
 				    require_once ($schemefile);
 				    }
 			}
@@ -141,8 +141,8 @@ if(! $a->install) {
 	}
 
 // Apply the settings
-	if(file_exists('view/theme/nubasic/css/style.css')) {
-		$x = file_get_contents('view/theme/nubasic/css/style.css');
+	if(file_exists('view/theme/redbasic/css/style.css')) {
+		$x = file_get_contents('view/theme/redbasic/css/style.css');
 
 $options = array (
 '$nav_bg' => $nav_bg,
@@ -182,9 +182,9 @@ $options = array (
 echo str_replace(array_keys($options), array_values($options), $x);    
 }
 
-if($sloppy_photos && file_exists('view/theme/nubasic/css/sloppy_photos.css')) {
-	echo file_get_contents('view/theme/nubasic/css/sloppy_photos.css');
+if($sloppy_photos && file_exists('view/theme/redbasic/css/sloppy_photos.css')) {
+	echo file_get_contents('view/theme/redbasic/css/sloppy_photos.css');
 } 
-if($narrow_navbar && file_exists('view/theme/nubasic/css/narrow_navbar.css')) {
-	echo file_get_contents('view/theme/nubasic/css/narrow_navbar.css');
+if($narrow_navbar && file_exists('view/theme/redbasic/css/narrow_navbar.css')) {
+	echo file_get_contents('view/theme/redbasic/css/narrow_navbar.css');
 } 
