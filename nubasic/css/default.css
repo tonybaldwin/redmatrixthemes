@@ -31,7 +31,7 @@ aside input[type='text'] {
 section {
 	float:left;
 	padding: 15px;
-	max-width: 840px;
+	width: 840pxi!important;
 	padding-bottom: 350px;
 }
 
